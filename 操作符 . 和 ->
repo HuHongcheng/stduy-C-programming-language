@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+struct new
+{
+	char name[30];
+	short age;
+	char sex[30];
+};
+
+int main()
+{
+	struct new human = { "张三",1000,"男" };
+	printf("%s\n", human.name);
+	printf("%d\n", human.age);
+	printf("%s\n", human.sex);
+
+
+	struct new* cp = &human;//引用指针 才能用->
+	printf("%s\n",cp->name);
+	printf("%d\n", cp->age);
+	printf("%s\n", cp->sex);
+	return 0;
+}

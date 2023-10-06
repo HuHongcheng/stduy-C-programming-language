@@ -1,0 +1,23 @@
+-------------------注意指针的类型！！！-------------------------
+#include<stdio.h>
+int main()
+{
+	char x = 'w';
+	char* cp = &x;//注意不是int* 而是char*
+	printf("%p\n", cp);
+	printf("%p\n", &x);
+	return 0;
+}
+-------------------------指针-----------------------------
+int main()
+{
+	int a = 10;
+	int* cp = &a;
+	printf("%p\n", cp);//输出地址
+	printf("%p\n", &a);//也可以这样
+	printf("改变前a的值=%d\n", a);
+	*cp = 666;
+	printf("改变后a的值=%d\n", a);//再次输出a的值 发现已经被改变
+	return 0;
+
+}

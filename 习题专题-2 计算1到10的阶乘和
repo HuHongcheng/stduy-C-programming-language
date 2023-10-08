@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+	int b = 1;
+	int sum = 0;
+	int i = 1;
+
+
+	for (b = 1; b < 5; b++)
+	{
+
+		int y = 1;
+
+		for (i = 1; i <= b; i++)
+		{
+			y = y * i;
+		
+		}
+		sum = sum + y;
+	}
+	
+	printf("阶乘为:%d", sum);
+  return 0;
+}

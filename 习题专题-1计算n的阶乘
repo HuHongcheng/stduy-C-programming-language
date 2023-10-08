@@ -1,0 +1,16 @@
+#include<stdio.h>
+
+int main()
+{
+	int x = 0;
+	int y = 1;
+	printf("请输入x的值:");
+	scanf("%d", &x);
+	int i = 1;
+	for (i = 1; i <=x; i++)
+	{
+		y = y * i;
+	}
+	printf("阶乘为:%d", y);
+	return 0;
+}

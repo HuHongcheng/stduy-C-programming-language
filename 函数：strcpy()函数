@@ -1,0 +1,11 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char arr1[] = "bit";
+	char arr2[] = "##############";
+	strcpy(arr2, arr1);
+
+	printf("%s", arr2);//连 \0也会复制来!!!
+	return 0;
+}

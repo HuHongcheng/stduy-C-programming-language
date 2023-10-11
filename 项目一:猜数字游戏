@@ -1,0 +1,55 @@
+#include<stdio.h>
+#include<stdlib.h>
+void game()
+{
+	int guess = 0;
+	int number = 0;
+	number = rand() % 100;
+	while (1)
+	{
+		printf("请输入要猜的数字:");
+		scanf("%d", &guess);
+		if (guess > number)
+		{
+			printf("猜大了\n");
+		}
+		else if (guess < number)
+		{
+			printf("猜小了\n");
+		}
+		else
+		{
+			printf("恭喜你 猜对了!\n");
+			break;
+		}
+	}
+
+
+}
+void menu()
+{
+	printf("*****************************************\n");
+	printf("*****------1.开始------0.结束-------*****\n");
+	printf("*****************************************\n");
+}
+int main()
+{
+	srand((unsigned)time(NULL));
+
+	int start = 0;
+	do
+	{
+		menu();
+		printf("请输入数字：");
+		scanf("%d", &start);
+		if (start == 1)
+		{
+			game();
+		}
+		if (start == 0)
+		{
+			printf("游戏结束");
+		}
+	} while (start);
+	return 0;
+}

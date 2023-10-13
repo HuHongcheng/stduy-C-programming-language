@@ -1,0 +1,17 @@
+#include<stdio.h>
+int sum(int a,int b)
+{
+	return a + b;
+}
+int main()
+{
+	int a = 0;
+	int b = 0;
+	printf("请输入a b的值:");
+	scanf("%d%d", &a, &b);
+	int Sum = sum(a, b);
+	printf("Sum=%d", Sum);
+	return 0;
+
+
+}

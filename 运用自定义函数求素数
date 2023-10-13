@@ -1,0 +1,30 @@
+#include<stdio.h>
+int panduan(int a)
+{
+	int i = 0;
+	for (i = 2; i < a; i++)
+	{
+		if (a % i == 0)
+		{
+			return a;
+		}
+	}
+	return 0;
+}
+int main()
+{
+	
+	int number = 0;
+	printf("请输入一个数:");
+	scanf("%d", &number);
+	int ret=panduan(number);
+	if (ret!=0)
+	{
+		printf("%d不是素数",ret);
+	}
+	if (ret == 0)
+	{
+		printf("%d是素数", number);
+	}
+	return 0;
+}

@@ -1,0 +1,28 @@
+#include<stdio.h>
+int runnian(int year)
+{
+	if ((year % 4 == 0 && year % 100 != 0)||(year%400==0))
+	{
+		return 1;
+	}
+	else
+	{
+		return 0;
+	}
+}
+int main()
+{
+	int year = 0;
+	printf("请输入年份:");
+	scanf("%d", &year);
+	int ret=runnian(year);
+	if (ret==1)
+	{
+		printf("%d是闰年", year);
+	}
+	if (ret ==0)
+	{
+		printf("%d不是闰年", year);
+	}
+	return 0;
+}

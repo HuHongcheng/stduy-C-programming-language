@@ -1,0 +1,19 @@
+#include<stdio.h>
+void swep(int*x,int*y)
+{
+	int p = 0;
+	p = *x;
+	*x = *y;
+	*y = p;
+
+}
+int main()
+{
+	int a = 10;
+	int b = 20;
+	printf("交换前:%d%d",a, b);
+	swep(&a,&b);
+	printf("交换后:%d%d", a, b);
+	return 0;
+
+}

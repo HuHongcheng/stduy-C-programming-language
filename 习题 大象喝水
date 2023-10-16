@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+
+	double h = 0;
+	double r = 0;
+	scanf("%lf %lf", &h, &r);
+
+	int d = 0;
+	d = 2 * r;
+	double V = 0;
+	double S = 0;
+	S = 3.14 * r * r;
+	V = S * h;
+	double MIN = 0;
+	MIN = (20000 / V) + 1;
+	printf("%.0lf", MIN);
+	return 0;
+
+
+}

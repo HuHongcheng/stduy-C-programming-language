@@ -1,0 +1,22 @@
+#include<stdio.h>
+long long jiecheng(long long k)
+{
+	if (k<=1)
+	{
+		return 1;
+	}
+	else
+	{
+		return  k * jiecheng(k - 1);
+	}
+}
+int main()
+{
+	long long k = 0;
+	long long ret = 0;
+	scanf("%lld", &k);
+	ret = jiecheng(k);
+	printf("%lld", ret);
+	return 0;
+
+}

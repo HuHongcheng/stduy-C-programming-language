@@ -1,0 +1,20 @@
+#include<stdio.h>
+void prnint(int num)
+{
+
+	if (num>9)
+	{
+		prnint(num / 10);
+	}
+	printf("%d ", num % 10);
+}
+
+int main()
+{
+	unsigned int num = 0;
+	scanf("%d", &num);
+	prnint(num);
+	return 0;
+
+
+}

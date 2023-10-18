@@ -1,0 +1,22 @@
+#include<stdio.h>
+int xy(int n)
+{
+	if (n<=2)
+	{
+		return 1;
+	}
+	else
+	{
+		return xy(n - 1) + xy(n - 2);
+	}
+}
+int main()
+{
+	int n = 0;
+	int ret = 0;
+	printf("请输入要查找第几个:");
+	scanf("%d", &n);
+	ret = xy(n);
+	printf("%d", ret);
+	return 0;
+}
